@@ -32,8 +32,8 @@
 		0DA5CEB87671893623B6940A /* Pods-HSCenterSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSCenterSlider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSCenterSlider_Example/Pods-HSCenterSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2BD5DEC08D474202FFD703BF /* Pods_HSCenterSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSCenterSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A93BDA98550E153084C015D /* Pods-HSCenterSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSCenterSlider_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HSCenterSlider_Tests/Pods-HSCenterSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		578A27DA711DFC6C6F528CCB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5F2271C5CF9A21DF4F2D1F35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		578A27DA711DFC6C6F528CCB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5F2271C5CF9A21DF4F2D1F35 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HSCenterSlider_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSCenterSlider_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACE51AFB9204008FA782 /* HSCenterSlider_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSCenterSlider_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65C5BBF5AF17AAA04F9B3815 /* HSCenterSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HSCenterSlider.podspec; path = ../HSCenterSlider.podspec; sourceTree = "<group>"; };
+		65C5BBF5AF17AAA04F9B3815 /* HSCenterSlider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HSCenterSlider.podspec; path = ../HSCenterSlider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E59A82B16048352B35F416B3 /* Pods-HSCenterSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSCenterSlider_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HSCenterSlider_Tests/Pods-HSCenterSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB674127B481CA57A05B7C58 /* Pods_HSCenterSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSCenterSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -287,10 +287,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HSCenterSlider_Example/Pods-HSCenterSlider_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HSCenterSlider/HSCenterSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/HSRange/HSRange.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSCenterSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HSRange.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -470,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HSCenterSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -485,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HSCenterSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

@@ -1,18 +1,25 @@
 //
 //  ViewController.swift
-//  HSCenterSlider
+//  Double ended Slider Demo
 //
-//  Created by hitendradeveloper on 04/17/2018.
-//  Copyright (c) 2018 hitendradeveloper. All rights reserved.
+//  Created by SOTSYS216 on 09/04/18.
+//  Copyright © 2018 SOTSYS216. All rights reserved.
 //
 
 import UIKit
+import HSCenterSlider
+import HSRange
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var hsDoubleSlider: HSCenterSlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.hsDoubleSlider.delegate = self
+        self.hsDoubleSlider.tintColor = UIColor.orange
+        self.hsDoubleSlider.rangeValue = HSRange(low: -100, high: 100)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +27,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btn_50DidTap(_ sender: Any) {
+        self.hsDoubleSlider.value = -50;
+    }
+    
+    @IBAction func btn0DidTap(_ sender: Any) {
+        self.hsDoubleSlider.value = 0;
+    }
+    
+    @IBAction func btn50DidTap(_ sender: Any) {
+        self.hsDoubleSlider.value = 50;
+    }
+    
+    @IBAction func btn80AnimatedDidtap(_ sender: Any) {
+        self.hsDoubleSlider.set(value: 80, animated: true)
+    }
+    
+    @IBAction func btn_80AnimatedDidtap(_ sender: Any) {
+        self.hsDoubleSlider.set(value: -80, animated: true)
+    }
+}
+
+extension UIViewController: HSCenterSliderDelegate {
+    public func centerSlider(slider: HSCenterSlider, didChange value: Double) {
+        print("HSCenterSlider := value change with floating points := \(value)")
+        print("HSCenterSlider := value change without floating points := \(String.init(format: "%.0f", arguments: [value]))")  
+    }
 }
 
