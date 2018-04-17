@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSCenterSlider'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Easy to use double side center slider, that can show value in (A,B) Range.'
 
 # This description is used to generate tags and improve search results.

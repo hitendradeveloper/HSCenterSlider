@@ -109,7 +109,7 @@ extension HSCenterSlider{
         }
     }
     
-    private func setProgressOnUI(progressType: HSProgressType){
+    internal func setProgressOnUI(progressType: HSProgressType){
         switch progressType {
         case .left(let progress):
             let constantValue = min(
