@@ -28,8 +28,8 @@ public class HSCenterSlider: UIControl {
     @IBOutlet internal weak var lblProgressValue: UILabel!
     
     @IBOutlet private weak var constaintThumbCenterX: NSLayoutConstraint!
-    @IBOutlet private weak var constrintLeftProgressWidth: NSLayoutConstraint!
-    @IBOutlet private weak var constrintRightProgressWidth: NSLayoutConstraint!
+    @IBOutlet internal weak var constrintLeftProgressWidth: NSLayoutConstraint!
+    @IBOutlet internal weak var constrintRightProgressWidth: NSLayoutConstraint!
     
     //MARK:- iVars
     internal var isMovingThumb = false;
@@ -109,7 +109,7 @@ extension HSCenterSlider{
         }
     }
     
-    internal func setProgressOnUI(progressType: HSProgressType){
+    private func setProgressOnUI(progressType: HSProgressType){
         switch progressType {
         case .left(let progress):
             let constantValue = min(
@@ -146,7 +146,7 @@ extension HSCenterSlider {
                              range2: HSRange(low: 0, high: self.bounds.size.width.double))
     }
     
-    internal var internalLeftHalfRangeConverter: HSRangeConverter? {
+    private var internalLeftHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }
@@ -156,7 +156,7 @@ extension HSCenterSlider {
                              range2: HSRange(low: internalConverter.toRange2(of: internalConverter.range1.low), high: internalConverter.toRange2(of: internalConverter.range1.mid))
                             )
     }
-    internal var internalRightHalfRangeConverter: HSRangeConverter? {
+    private var internalRightHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }
