@@ -109,7 +109,7 @@ extension HSCenterSlider{
         }
     }
     
-    private func setProgressOnUI(progressType: HSProgressType){
+    internal func setProgressOnUI(progressType: HSProgressType){
         switch progressType {
         case .left(let progress):
             let constantValue = min(
@@ -146,7 +146,7 @@ extension HSCenterSlider {
                              range2: HSRange(low: 0, high: self.bounds.size.width.double))
     }
     
-    private var internalLeftHalfRangeConverter: HSRangeConverter? {
+    internal var internalLeftHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }
@@ -156,7 +156,7 @@ extension HSCenterSlider {
                              range2: HSRange(low: internalConverter.toRange2(of: internalConverter.range1.low), high: internalConverter.toRange2(of: internalConverter.range1.mid))
                             )
     }
-    private var internalRightHalfRangeConverter: HSRangeConverter? {
+    internal var internalRightHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }
