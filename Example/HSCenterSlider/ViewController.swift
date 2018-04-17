@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension UIViewController: HSCenterSliderDelegate {
+extension ViewController: HSCenterSliderDelegate {
     public func centerSlider(slider: HSCenterSlider, didChange value: Double) {
         print("HSCenterSlider := value change with floating points := \(value)")
         print("HSCenterSlider := value change without floating points := \(String.init(format: "%.0f", arguments: [value]))")  
