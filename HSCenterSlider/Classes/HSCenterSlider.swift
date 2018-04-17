@@ -27,7 +27,7 @@ public class HSCenterSlider: UIControl {
     @IBOutlet private weak var rightProgressView: UIView!
     @IBOutlet internal weak var lblProgressValue: UILabel!
     
-    @IBOutlet private weak var constaintThumbCenterX: NSLayoutConstraint!
+    @IBOutlet internal weak var constaintThumbCenterX: NSLayoutConstraint!
     @IBOutlet internal weak var constrintLeftProgressWidth: NSLayoutConstraint!
     @IBOutlet internal weak var constrintRightProgressWidth: NSLayoutConstraint!
     
