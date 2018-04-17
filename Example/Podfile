@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSCenterSlider_Example' do
+  pod 'HSCenterSlider', :path => '../'
+
+  target 'HSCenterSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
