@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HSCenterSlider'
   s.version          = '0.1.0'
-  s.summary          = 'Easy to use double ended center slider, that can show value in (A,B) Range.'
+  s.summary          = 'Easy to use double side center slider, that can show value in (A,B) Range.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Easy to use double ended center slider, that can show value in (A,B) Range.
+  Easy to use double side center slider, that can show value in (A,B) Range.
   Where center of the slider is (A+B)/2.
   E.g.
   1. If your range if (-100,100) then center point of slider will be 0.
