@@ -11,4 +11,5 @@ language: swift
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/HSCenterSlider.xcworkspace -scheme HSCenterSlider-Example -sdk iphonesimulator11.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod setup
 - pod lib lint --swift-version=4.0
