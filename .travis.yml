@@ -10,6 +10,9 @@ language: swift
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
+- pod setup
+- pod update --project-directory=Example
+- pod install --project-directory=Example 
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/HSCenterSlider.xcworkspace -scheme HSCenterSlider-Example -sdk iphonesimulator11.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod setup
 - pod lib lint --swift-version=4.0
