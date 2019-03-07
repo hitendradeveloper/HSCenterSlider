@@ -34,10 +34,6 @@ pod setup
 
 Hitendra Solanki, hitendra.developer@gmail.com | twitter: @hitendrahckr
 
-## Author
-
-hitendradeveloper, hitendra.developer@gmail.com
-
 ## License
 
 HSCenterSlider is available under the MIT license. See the LICENSE file for more info.
