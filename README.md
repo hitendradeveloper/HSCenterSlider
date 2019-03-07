@@ -1,7 +1,5 @@
 # HSCenterSlider
 
-[![CI Status](http://img.shields.io/travis/hitendradeveloper/HSCenterSlider.svg?style=flat)](https://travis-ci.org/hitendradeveloper/HSCenterSlider)
-[![Version](https://img.shields.io/cocoapods/v/HSCenterSlider.svg?style=flat)](http://cocoapods.org/pods/HSCenterSlider)
 [![License](https://img.shields.io/cocoapods/l/HSCenterSlider.svg?style=flat)](http://cocoapods.org/pods/HSCenterSlider)
 [![Platform](https://img.shields.io/cocoapods/p/HSCenterSlider.svg?style=flat)](http://cocoapods.org/pods/HSCenterSlider)
 
@@ -23,6 +21,18 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'HSCenterSlider'
 ```
+##### Possible Error:
+`[!] Unable to find a specification for 'HSRange'` 
+##### Solution:
+
+```ruby
+pod setup
+```
+
+
+## Author
+
+Hitendra Solanki, hitendra.developer@gmail.com | twitter: @hitendrahckr
 
 ## Author
 
