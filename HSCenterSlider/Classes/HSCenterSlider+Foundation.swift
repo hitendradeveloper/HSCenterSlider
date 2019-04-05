@@ -12,22 +12,22 @@ import Foundation
 
 
 extension Double {
-    var cgfloat: CGFloat {
-        return CGFloat(self)
-    }
+  var cgfloat: CGFloat {
+    return CGFloat(self)
+  }
 }
 extension CGFloat {
-    var double: Double {
-        return Double(self)
-    }
+  var double: Double {
+    return Double(self)
+  }
 }
 
 public extension NSObject{
-    class var className: String {
-        return String(describing: self)
-    }
-    
-    var className: String {
-        return String(describing: self)
-    }
+  class var className: String {
+    return String(describing: self)
+  }
+  
+  var className: String {
+    return String(describing: self)
+  }
 }

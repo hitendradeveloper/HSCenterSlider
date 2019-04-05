@@ -86,13 +86,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="hsDoubleSlider" destination="ztR-mj-kd1" id="xwP-HD-Xea"/>
                         <outlet property="hsVertileCenterSlider" destination="5r9-G2-YYb" id="76q-r7-TNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604" y="26.53673163418291"/>
+            <point key="canvasLocation" x="-1121" y="24"/>
         </scene>
     </scenes>
 </document>

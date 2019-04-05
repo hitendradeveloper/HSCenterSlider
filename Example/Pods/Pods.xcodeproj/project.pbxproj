@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BD9D92F3D9E5ACD78632523A2E59597 /* HSRangeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF6CA08A401726892F95AA1788EF8BC /* HSRangeConverter.swift */; };
 		0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */; };
-		1DCDA930009D1CE351234EBAFC9384CE /* HSRange-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDEB7CDD4232ED15D1EFF8804100633 /* HSRange-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DCDA930009D1CE351234EBAFC9384CE /* HSRange-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E05550C2D79529458B09CD1CC15AFFA3 /* HSRange-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E89A71127758155D88A599F1F60D627 /* HSRangeConverter+Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9D38D479293D9BC8A641FF3DF5545 /* HSRangeConverter+Deprecations.swift */; };
 		21F9DE805262B603DA37978250B971C1 /* Pods-HSCenterSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD2FA791AAB29E7645A50A093BC4F17 /* Pods-HSCenterSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32DBF089A18E79DA22530B2BF60258EA /* HSCenterSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68537993080681680672B8E93E5EAEFE /* HSCenterSlider-dummy.m */; };
 		44A9892C8395BBED43359BC98066C6E5 /* HSCenterSlider+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C27B90A53485E71D9BA63DCC0336A /* HSCenterSlider+Foundation.swift */; };
 		467F21A1DDA4234AFC86E25AA1431178 /* HSCenterSlider+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15F8C1496A4D9B6469906900A660F4 /* HSCenterSlider+UIKit.swift */; };
 		522B507D4E9514E0CAB0859134D5D21B /* Pods-HSCenterSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DA461FCD7391CE55182BF26A07A1D9 /* Pods-HSCenterSlider_Tests-dummy.m */; };
 		584D712EC1640CCD04D4C9BDE093D825 /* HSRange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB78DC50D13686071DADBB372FE3EF3 /* HSRange.framework */; };
-		5F4E5EBDB7A0178166719671F0888EBF /* HSRange-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 255C720FE968E67EE3C14E9F559142A4 /* HSRange-dummy.m */; };
-		62AF8712BE590FF575CD41518EE86526 /* HSHorizontalCenterSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF3B46A021FDA587F50DE7EC0C134C /* HSHorizontalCenterSlider.xib */; };
-		72CF116473B4F281A53D6BFEBA273329 /* HSVerticleCenterSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CAA66BA4B93469B238B8CCFAA3CE7C /* HSVerticleCenterSlider.xib */; };
+		796F632F487DC4F2EED474DEFF0152A4 /* HSRange-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 323CE0BCCEC16876F9562C3BB6DC00BE /* HSRange-dummy.m */; };
+		8719E9C15BF493BF6A96A26C11941E04 /* HSRangeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB0010AA18C23121026CA25B8479799 /* HSRangeConverter.swift */; };
 		892A18485DDC1CD28F5FB51CCEC3EAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35D50B18834C9BCB75DEC89BC79BB53 /* Foundation.framework */; };
+		934C7CE22537537B1E62C5733069D631 /* HSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404A265576F997D7E71A82E9BAAED05 /* HSRange.swift */; };
 		9B9783905ECA4266E4FFFD71B0FC0B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35D50B18834C9BCB75DEC89BC79BB53 /* Foundation.framework */; };
 		A01967093C6C56224325B62A5419F634 /* Pods-HSCenterSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885C4F3073E3B33DDB760B8B6FC6BC11 /* Pods-HSCenterSlider_Example-dummy.m */; };
 		B89A7C5C4386E25A20EFFA8C42A3DA89 /* HSCenterSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C748B238429C4F6474380F78E0D31C6E /* HSCenterSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C460167BF2A6010AD58D95EBBBA0C0FA /* HSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0548712FF104F6640E03595A5F0C0737 /* HSRange.swift */; };
 		D9F9F8A5AAD7E2C8A9A241BBDD753D7B /* HSCenterSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14A006E497E9A653421845CE96C875E6 /* HSCenterSlider.bundle */; };
 		E743C683C41B759C6A204BB4B55ECEE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A15124E333FCF942E96A10AA50ACFA /* UIKit.framework */; };
 		EEBD6765C625699E70742B68223846B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35D50B18834C9BCB75DEC89BC79BB53 /* Foundation.framework */; };
 		F2C2072C692FA1E7510D4AAB8CFF8A0D /* HSCenterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C75CEF840288201BD430DD0B335C58 /* HSCenterSlider.swift */; };
-		F72F527D22576C4700ED9A1A /* HSHorizontalCenterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F527B22576C4600ED9A1A /* HSHorizontalCenterSlider.swift */; };
-		F72F527E22576C4700ED9A1A /* HSVerticleCenterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F527C22576C4600ED9A1A /* HSVerticleCenterSlider.swift */; };
+		F72F52812257729500ED9A1A /* HSVerticleCenterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F527F2257729500ED9A1A /* HSVerticleCenterSlider.swift */; };
+		F72F52822257729500ED9A1A /* HSHorizontalCenterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F52802257729500ED9A1A /* HSHorizontalCenterSlider.swift */; };
+		F72F528522577C3700ED9A1A /* HSHorizontalCenterSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF3B46A021FDA587F50DE7EC0C134C /* HSHorizontalCenterSlider.xib */; };
+		F72F52892257844D00ED9A1A /* HSVerticleCenterSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CAA66BA4B93469B238B8CCFAA3CE7C /* HSVerticleCenterSlider.xib */; };
 		FA7E9EE9DB329340F01156BA72F15BAB /* Pods-HSCenterSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0C21B70EF5B45A535D86B3C06CB66B /* Pods-HSCenterSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA8DE8F5876596F0D5BE7145C5DCCBB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35D50B18834C9BCB75DEC89BC79BB53 /* Foundation.framework */; };
+		FB730AE1719CDE43CD01F5C88C8678BB /* HSRangeConverter+NewAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA86CA613768BE9F8CB2A28FC6C05B /* HSRangeConverter+NewAPIs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,57 +76,59 @@
 
 /* Begin PBXFileReference section */
 		00CAA66BA4B93469B238B8CCFAA3CE7C /* HSVerticleCenterSlider.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = HSVerticleCenterSlider.xib; path = HSCenterSlider/Assets/HSVerticleCenterSlider.xib; sourceTree = "<group>"; };
-		0548712FF104F6640E03595A5F0C0737 /* HSRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSRange.swift; path = HSRange/Classes/HSRange.swift; sourceTree = "<group>"; };
 		08C75CEF840288201BD430DD0B335C58 /* HSCenterSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSCenterSlider.swift; path = HSCenterSlider/Classes/HSCenterSlider.swift; sourceTree = "<group>"; };
+		0C17C2F7965150343B29BDFBABC916BD /* HSRange-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSRange-prefix.pch"; sourceTree = "<group>"; };
 		14A006E497E9A653421845CE96C875E6 /* HSCenterSlider.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSCenterSlider.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1926F9867D9E0EF6117B2BE7BA99DCA5 /* Pods-HSCenterSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSCenterSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1AB78DC50D13686071DADBB372FE3EF3 /* HSRange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSRange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22634B8C4BD8FD083FCEE9534A6DE09C /* Pods_HSCenterSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSCenterSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		255C720FE968E67EE3C14E9F559142A4 /* HSRange-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSRange-dummy.m"; sourceTree = "<group>"; };
+		323CE0BCCEC16876F9562C3BB6DC00BE /* HSRange-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSRange-dummy.m"; sourceTree = "<group>"; };
 		3781F11A386358E7D11695028447C3B4 /* Pods-HSCenterSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSCenterSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3D5EF196883E875FA6BC82CD6363823E /* HSCenterSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HSCenterSlider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3E39B0A321C2D745DDB789967830C3F5 /* HSRange.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSRange.modulemap; sourceTree = "<group>"; };
 		3F0C21B70EF5B45A535D86B3C06CB66B /* Pods-HSCenterSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSCenterSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
 		414F413B10C822ECAFC274CC4C81F425 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4404A265576F997D7E71A82E9BAAED05 /* HSRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSRange.swift; path = HSRange/Classes/HSRange.swift; sourceTree = "<group>"; };
 		519F4A101EF9B7676D8C5E6761C45256 /* HSCenterSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSCenterSlider.xcconfig; sourceTree = "<group>"; };
 		563AC6711EA3C2CEF69B1AB2B1EFA42F /* Pods-HSCenterSlider_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSCenterSlider_Tests-Info.plist"; sourceTree = "<group>"; };
-		59364030A091FD1D6FF20AA132105D0A /* ResourceBundle-HSCenterSlider-HSCenterSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HSCenterSlider-HSCenterSlider-Info.plist"; sourceTree = "<group>"; };
+		59364030A091FD1D6FF20AA132105D0A /* ResourceBundle-HSCenterSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HSCenterSlider-Info.plist"; sourceTree = "<group>"; };
 		5DD2FA791AAB29E7645A50A093BC4F17 /* Pods-HSCenterSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSCenterSlider_Example-umbrella.h"; sourceTree = "<group>"; };
 		626FDEFC996B93805E9AB4316E11418C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		63E9D38D479293D9BC8A641FF3DF5545 /* HSRangeConverter+Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSRangeConverter+Deprecations.swift"; path = "HSRange/Classes/HSRangeConverter+Deprecations.swift"; sourceTree = "<group>"; };
 		64A15124E333FCF942E96A10AA50ACFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		68537993080681680672B8E93E5EAEFE /* HSCenterSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSCenterSlider-dummy.m"; sourceTree = "<group>"; };
 		6AEF3B46A021FDA587F50DE7EC0C134C /* HSHorizontalCenterSlider.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = HSHorizontalCenterSlider.xib; path = HSCenterSlider/Assets/HSHorizontalCenterSlider.xib; sourceTree = "<group>"; };
-		6F99169C7482BFDF653717AAE3D330B3 /* HSRange-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSRange-Info.plist"; sourceTree = "<group>"; };
 		6FFFB356BF489AD6BDB54CFF778CFC68 /* Pods-HSCenterSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSCenterSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		729B310ADF317C461B2FFCFF26C9F0A2 /* Pods-HSCenterSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSCenterSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		755FE4A4CFAD52526BA0BE9B2263839E /* Pods-HSCenterSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSCenterSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		82EFDA7B327AC1498FDB049F9FA19DED /* HSCenterSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSCenterSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		885C4F3073E3B33DDB760B8B6FC6BC11 /* Pods-HSCenterSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSCenterSlider_Example-dummy.m"; sourceTree = "<group>"; };
-		8BDEB7CDD4232ED15D1EFF8804100633 /* HSRange-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSRange-umbrella.h"; sourceTree = "<group>"; };
 		8E31DEFAC0A8F51FE00C64E4B0B0457A /* HSRange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSRange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D72FFA638AC9E8011EDA95796A778E /* Pods-HSCenterSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSCenterSlider_Example.modulemap"; sourceTree = "<group>"; };
 		94E10646C809C05975328B366757844C /* Pods-HSCenterSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSCenterSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9CEA86CA613768BE9F8CB2A28FC6C05B /* HSRangeConverter+NewAPIs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSRangeConverter+NewAPIs.swift"; path = "HSRange/Classes/HSRangeConverter+NewAPIs.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A648EDD3BC4E67E0817371743F27696C /* HSCenterSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSCenterSlider-prefix.pch"; sourceTree = "<group>"; };
-		AAF6CA08A401726892F95AA1788EF8BC /* HSRangeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSRangeConverter.swift; path = HSRange/Classes/HSRangeConverter.swift; sourceTree = "<group>"; };
 		B30C43F0FB78ED1CF1686A7481270220 /* Pods-HSCenterSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSCenterSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BA7CF04F110575A3CFCCDB69373984CD /* HSRange-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSRange-prefix.pch"; sourceTree = "<group>"; };
 		BC8C27B90A53485E71D9BA63DCC0336A /* HSCenterSlider+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSCenterSlider+Foundation.swift"; path = "HSCenterSlider/Classes/HSCenterSlider+Foundation.swift"; sourceTree = "<group>"; };
 		C748B238429C4F6474380F78E0D31C6E /* HSCenterSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSCenterSlider-umbrella.h"; sourceTree = "<group>"; };
-		C88FFA0E4A51A28487B91E09A4BB42BD /* HSRange.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSRange.xcconfig; sourceTree = "<group>"; };
 		CB82C72DC7A05893B47A213D3F0640EA /* Pods-HSCenterSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSCenterSlider_Tests.modulemap"; sourceTree = "<group>"; };
+		CFEC5549EA31171C71C831C9DBD2CB05 /* HSRange-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSRange-Info.plist"; sourceTree = "<group>"; };
+		D27B3B9F093B9892B82B8EFB3B697AFD /* HSRange.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSRange.xcconfig; sourceTree = "<group>"; };
 		D4698D902403F754D956D7201237812B /* Pods-HSCenterSlider_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSCenterSlider_Example-Info.plist"; sourceTree = "<group>"; };
 		D4F5479F675CAFBAB8FCF8C2C9ADAF75 /* HSCenterSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSCenterSlider-Info.plist"; sourceTree = "<group>"; };
 		D6BE6E0D5ED275259DE19396EB622357 /* Pods-HSCenterSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSCenterSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E0484BEC6F78F6918AFDF215C0B8C091 /* Pods_HSCenterSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSCenterSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E05550C2D79529458B09CD1CC15AFFA3 /* HSRange-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSRange-umbrella.h"; sourceTree = "<group>"; };
 		E10E66FD768C2D1BC47BB16FFD9600C0 /* HSCenterSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSCenterSlider.modulemap; sourceTree = "<group>"; };
 		E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSCenterSliderDelegate.swift; path = HSCenterSlider/Classes/HSCenterSliderDelegate.swift; sourceTree = "<group>"; };
 		E95738A204DB00FA07087226E9CFB23C /* Pods-HSCenterSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSCenterSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EC15F8C1496A4D9B6469906900A660F4 /* HSCenterSlider+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSCenterSlider+UIKit.swift"; path = "HSCenterSlider/Classes/HSCenterSlider+UIKit.swift"; sourceTree = "<group>"; };
+		ECB0010AA18C23121026CA25B8479799 /* HSRangeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSRangeConverter.swift; path = HSRange/Classes/HSRangeConverter.swift; sourceTree = "<group>"; };
 		F1DA461FCD7391CE55182BF26A07A1D9 /* Pods-HSCenterSlider_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSCenterSlider_Tests-dummy.m"; sourceTree = "<group>"; };
 		F35D50B18834C9BCB75DEC89BC79BB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F72F527B22576C4600ED9A1A /* HSHorizontalCenterSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHorizontalCenterSlider.swift; sourceTree = "<group>"; };
-		F72F527C22576C4600ED9A1A /* HSVerticleCenterSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSVerticleCenterSlider.swift; sourceTree = "<group>"; };
+		F72F527F2257729500ED9A1A /* HSVerticleCenterSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSVerticleCenterSlider.swift; path = HSCenterSlider/Classes/HSVerticleCenterSlider.swift; sourceTree = "<group>"; };
+		F72F52802257729500ED9A1A /* HSHorizontalCenterSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HSHorizontalCenterSlider.swift; path = HSCenterSlider/Classes/HSHorizontalCenterSlider.swift; sourceTree = "<group>"; };
+		FEB1871448A0F18AF91204A2880791BA /* HSRange.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSRange.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,14 +209,6 @@
 			path = "Target Support Files/Pods-HSCenterSlider_Tests";
 			sourceTree = "<group>";
 		};
-		17C2105A7197D17B9785AA08091D1B80 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				89B2F42084A47E1FEB269CDA3641AB69 /* HSRange */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		220EE6E9054B20AE660A73B95FAE6A82 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +228,20 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		4B393CC64EA33B2EB7D2266446E6F483 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEB1871448A0F18AF91204A2880791BA /* HSRange.modulemap */,
+				D27B3B9F093B9892B82B8EFB3B697AFD /* HSRange.xcconfig */,
+				323CE0BCCEC16876F9562C3BB6DC00BE /* HSRange-dummy.m */,
+				CFEC5549EA31171C71C831C9DBD2CB05 /* HSRange-Info.plist */,
+				0C17C2F7965150343B29BDFBABC916BD /* HSRange-prefix.pch */,
+				E05550C2D79529458B09CD1CC15AFFA3 /* HSRange-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HSRange";
+			sourceTree = "<group>";
+		};
 		4CF3D8C22BA74B5EDD6AFD641BDD5E4C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,26 @@
 				64A15124E333FCF942E96A10AA50ACFA /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		60D04D7AA060395C9BD086037AC6C52F /* HSRange */ = {
+			isa = PBXGroup;
+			children = (
+				4404A265576F997D7E71A82E9BAAED05 /* HSRange.swift */,
+				ECB0010AA18C23121026CA25B8479799 /* HSRangeConverter.swift */,
+				63E9D38D479293D9BC8A641FF3DF5545 /* HSRangeConverter+Deprecations.swift */,
+				9CEA86CA613768BE9F8CB2A28FC6C05B /* HSRangeConverter+NewAPIs.swift */,
+				4B393CC64EA33B2EB7D2266446E6F483 /* Support Files */,
+			);
+			path = HSRange;
+			sourceTree = "<group>";
+		};
+		6F60300B314E4887EC5B58CC08D25A52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60D04D7AA060395C9BD086037AC6C52F /* HSRange */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7441730E19FC211E891D1CB6791F89EF /* Products */ = {
@@ -253,20 +283,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		803EE0806027EDD36AA6703EC75A12C1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E39B0A321C2D745DDB789967830C3F5 /* HSRange.modulemap */,
-				C88FFA0E4A51A28487B91E09A4BB42BD /* HSRange.xcconfig */,
-				255C720FE968E67EE3C14E9F559142A4 /* HSRange-dummy.m */,
-				6F99169C7482BFDF653717AAE3D330B3 /* HSRange-Info.plist */,
-				BA7CF04F110575A3CFCCDB69373984CD /* HSRange-prefix.pch */,
-				8BDEB7CDD4232ED15D1EFF8804100633 /* HSRange-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HSRange";
-			sourceTree = "<group>";
-		};
 		83573E5E2C8E15302E81A719581C8290 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,16 +292,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		89B2F42084A47E1FEB269CDA3641AB69 /* HSRange */ = {
-			isa = PBXGroup;
-			children = (
-				0548712FF104F6640E03595A5F0C0737 /* HSRange.swift */,
-				AAF6CA08A401726892F95AA1788EF8BC /* HSRangeConverter.swift */,
-				803EE0806027EDD36AA6703EC75A12C1 /* Support Files */,
-			);
-			path = HSRange;
-			sourceTree = "<group>";
-		};
 		93C156DCB94141CCC4AE8B8ADD6B4E33 /* HSCenterSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,8 +299,8 @@
 				BC8C27B90A53485E71D9BA63DCC0336A /* HSCenterSlider+Foundation.swift */,
 				EC15F8C1496A4D9B6469906900A660F4 /* HSCenterSlider+UIKit.swift */,
 				E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */,
-				F72F527B22576C4600ED9A1A /* HSHorizontalCenterSlider.swift */,
-				F72F527C22576C4600ED9A1A /* HSVerticleCenterSlider.swift */,
+				F72F52802257729500ED9A1A /* HSHorizontalCenterSlider.swift */,
+				F72F527F2257729500ED9A1A /* HSVerticleCenterSlider.swift */,
 				3453465977DA7751BAE6BFFEACA9B614 /* Pod */,
 				220EE6E9054B20AE660A73B95FAE6A82 /* Resources */,
 				E907C233ED4D061EE94BA704452AD2B9 /* Support Files */,
@@ -326,7 +332,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BBC13362B512A0E3B0B6EB930F5C3F33 /* Development Pods */,
 				83573E5E2C8E15302E81A719581C8290 /* Frameworks */,
-				17C2105A7197D17B9785AA08091D1B80 /* Pods */,
+				6F60300B314E4887EC5B58CC08D25A52 /* Pods */,
 				7441730E19FC211E891D1CB6791F89EF /* Products */,
 				A707F63FD3B58571C5EA5BB74974D3CA /* Targets Support Files */,
 			);
@@ -341,7 +347,7 @@
 				D4F5479F675CAFBAB8FCF8C2C9ADAF75 /* HSCenterSlider-Info.plist */,
 				A648EDD3BC4E67E0817371743F27696C /* HSCenterSlider-prefix.pch */,
 				C748B238429C4F6474380F78E0D31C6E /* HSCenterSlider-umbrella.h */,
-				59364030A091FD1D6FF20AA132105D0A /* ResourceBundle-HSCenterSlider-HSCenterSlider-Info.plist */,
+				59364030A091FD1D6FF20AA132105D0A /* ResourceBundle-HSCenterSlider-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/HSCenterSlider";
@@ -390,7 +396,7 @@
 			buildConfigurationList = BC928B19983122E27926A2EDCD32FFAB /* Build configuration list for PBXNativeTarget "HSRange" */;
 			buildPhases = (
 				AACD8EF2D8D6E6237615DC27D20ED911 /* Headers */,
-				A8C89DB04AB8EE1A891A03F0F42A7AE1 /* Sources */,
+				EB28F0C007BDF6433E1F7F008F42E3A8 /* Sources */,
 				D94C299C56B79B7B37BE57BE4E4923E3 /* Frameworks */,
 				A54904751DC2C2B1345A1C6129562BAE /* Resources */,
 			);
@@ -544,8 +550,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62AF8712BE590FF575CD41518EE86526 /* HSHorizontalCenterSlider.xib in Resources */,
-				72CF116473B4F281A53D6BFEBA273329 /* HSVerticleCenterSlider.xib in Resources */,
+				F72F52892257844D00ED9A1A /* HSVerticleCenterSlider.xib in Resources */,
+				F72F528522577C3700ED9A1A /* HSHorizontalCenterSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,23 +570,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72F527D22576C4700ED9A1A /* HSHorizontalCenterSlider.swift in Sources */,
+				F72F52822257729500ED9A1A /* HSHorizontalCenterSlider.swift in Sources */,
+				F72F52812257729500ED9A1A /* HSVerticleCenterSlider.swift in Sources */,
 				44A9892C8395BBED43359BC98066C6E5 /* HSCenterSlider+Foundation.swift in Sources */,
 				467F21A1DDA4234AFC86E25AA1431178 /* HSCenterSlider+UIKit.swift in Sources */,
 				32DBF089A18E79DA22530B2BF60258EA /* HSCenterSlider-dummy.m in Sources */,
 				F2C2072C692FA1E7510D4AAB8CFF8A0D /* HSCenterSlider.swift in Sources */,
 				0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSliderDelegate.swift in Sources */,
-				F72F527E22576C4700ED9A1A /* HSVerticleCenterSlider.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8C89DB04AB8EE1A891A03F0F42A7AE1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F4E5EBDB7A0178166719671F0888EBF /* HSRange-dummy.m in Sources */,
-				C460167BF2A6010AD58D95EBBBA0C0FA /* HSRange.swift in Sources */,
-				0BD9D92F3D9E5ACD78632523A2E59597 /* HSRangeConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +592,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB28F0C007BDF6433E1F7F008F42E3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796F632F487DC4F2EED474DEFF0152A4 /* HSRange-dummy.m in Sources */,
+				934C7CE22537537B1E62C5733069D631 /* HSRange.swift in Sources */,
+				1E89A71127758155D88A599F1F60D627 /* HSRangeConverter+Deprecations.swift in Sources */,
+				FB730AE1719CDE43CD01F5C88C8678BB /* HSRangeConverter+NewAPIs.swift in Sources */,
+				8719E9C15BF493BF6A96A26C11941E04 /* HSRangeConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +791,7 @@
 		};
 		65B98B93B71719EB86A4766D6D0C9699 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C88FFA0E4A51A28487B91E09A4BB42BD /* HSRange.xcconfig */;
+			baseConfigurationReference = D27B3B9F093B9892B82B8EFB3B697AFD /* HSRange.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -923,7 +931,7 @@
 		};
 		C708D96ED2962D9931D18551827973E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C88FFA0E4A51A28487B91E09A4BB42BD /* HSRange.xcconfig */;
+			baseConfigurationReference = D27B3B9F093B9892B82B8EFB3B697AFD /* HSRange.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

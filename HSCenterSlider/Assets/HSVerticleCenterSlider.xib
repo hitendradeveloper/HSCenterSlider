@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider" customModuleProvider="target">
             <connections>
-                <outlet property="constaintThumbCenterValue" destination="Ht8-sB-w60" id="3Dy-XA-MEx"/>
+                <outlet property="constaintThumbCenterDimentionValue" destination="LSZ-ta-ZzE" id="Fro-sj-rqz"/>
+                <outlet property="constrintFirstHalfProgressDimentionValue" destination="kZI-Xa-Vxb" id="1cN-Ed-Ctb"/>
+                <outlet property="constrintSecondHalfProgressDimentionValue" destination="WWB-PZ-tu9" id="usY-R2-4a6"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="oly-1c-epr"/>
                 <outlet property="firstHalfProgressView" destination="Tdq-O5-LpE" id="lwA-KP-ooE"/>
                 <outlet property="lblProgressValue" destination="ClY-g6-4V9" id="ZEm-0b-6eo"/>

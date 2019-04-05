@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol HSCenterSliderDelegate: class {
-    func centerSlider(slider: HSCenterSlider, didChange value: Double)
+  func centerSlider(slider: HSCenterSlider, didChange value: Double)
 }

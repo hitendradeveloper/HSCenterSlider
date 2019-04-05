@@ -11,4 +11,7 @@ public class HSHorizontalCenterSlider: HSCenterSlider {
   override var maxDimentionValue: Double {
     return self.bounds.size.width.double
   }
+  override var sliderType: HSCenterSlider.HSCenterSliderType {
+    return HSCenterSliderType.horizontal
+  }
 }

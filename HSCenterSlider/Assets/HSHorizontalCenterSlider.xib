@@ -11,9 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider" customModuleProvider="target">
             <connections>
-                <outlet property="constaintThumbCenterValue" destination="Ht8-sB-w60" id="3Dy-XA-MEx"/>
-                <outlet property="constrintFirstHalfProgressWidth" destination="pTx-og-79R" id="8Cr-4Q-3A0"/>
-                <outlet property="constrintSecondHalfProgressWidth" destination="ezs-J1-msH" id="rVJ-on-J3s"/>
+                <outlet property="constaintThumbCenterDimentionValue" destination="Ht8-sB-w60" id="epX-wa-wyg"/>
+                <outlet property="constrintFirstHalfProgressDimentionValue" destination="pTx-og-79R" id="buG-8o-oJ4"/>
+                <outlet property="constrintSecondHalfProgressDimentionValue" destination="ezs-J1-msH" id="ifD-Lm-XSD"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="oly-1c-epr"/>
                 <outlet property="firstHalfProgressView" destination="Tdq-O5-LpE" id="lwA-KP-ooE"/>
                 <outlet property="lblProgressValue" destination="ClY-g6-4V9" id="ZEm-0b-6eo"/>
@@ -83,7 +83,7 @@
             <constraints>
                 <constraint firstItem="Adz-4H-i3t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3G5-Wk-VYf"/>
                 <constraint firstAttribute="trailing" secondItem="Adz-4H-i3t" secondAttribute="trailing" id="BsN-MU-JCB"/>
-                <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerX" secondItem="Adz-4H-i3t" secondAttribute="centerX" id="Ht8-sB-w60"/>
+                <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ht8-sB-w60"/>
                 <constraint firstItem="BsY-kY-1i4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IJK-uD-9aw"/>
                 <constraint firstItem="E0x-EJ-8Wi" firstAttribute="top" secondItem="ClY-g6-4V9" secondAttribute="bottom" constant="6" id="KqA-WS-rO4"/>
                 <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LSZ-ta-ZzE"/>
