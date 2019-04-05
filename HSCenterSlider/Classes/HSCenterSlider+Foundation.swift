@@ -23,11 +23,11 @@ extension CGFloat {
 }
 
 public extension NSObject{
-    public class var className: String {
+    class var className: String {
         return String(describing: self)
     }
     
-    public var className: String {
+    var className: String {
         return String(describing: self)
     }
 }

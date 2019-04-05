@@ -9,11 +9,25 @@
 import UIKit
 import HSRange
 
-public class HSCenterSlider: UIControl {
-    
+private protocol HSCenterSlidableUI {
+  var firstHalfProgressView: UIView!  {get set}
+  var secondHalfProgressView: UIView! {get set}
+  
+  var constaintThumbCenterValue: NSLayoutConstraint!  {get set}
+ 
+  var constrintFirstHalfProgressWidth: NSLayoutConstraint!   {get set}
+  var constrintSecondHalfProgressWidth: NSLayoutConstraint!  {get set}
+}
+
+private protocol HSCenterSlidableValue {
+  var maxDimentionValue: Double { get }
+}
+
+public class HSCenterSlider: UIControl, HSCenterSlidableUI {
+  
     enum HSProgressType {
-        case left(progress: Double)
-        case right(progress: Double)
+        case first(progress: Double)
+        case second(progress: Double)
     }
     
     //MARK:- Delegate
@@ -23,35 +37,43 @@ public class HSCenterSlider: UIControl {
     @IBOutlet private var contentView: UIView!
 
     @IBOutlet internal weak var thumb: UIView!
-    @IBOutlet private weak var leftProgressView: UIView!
-    @IBOutlet private weak var rightProgressView: UIView!
     @IBOutlet internal weak var lblProgressValue: UILabel!
-    
-    @IBOutlet internal weak var constaintThumbCenterX: NSLayoutConstraint!
-    @IBOutlet internal weak var constrintLeftProgressWidth: NSLayoutConstraint!
-    @IBOutlet internal weak var constrintRightProgressWidth: NSLayoutConstraint!
-    
+  
+  //HSCenterSlidable: protocol properties
+  @IBOutlet fileprivate weak var firstHalfProgressView: UIView!
+  @IBOutlet fileprivate weak var secondHalfProgressView: UIView!
+  
+  @IBOutlet internal weak var constaintThumbCenterValue: NSLayoutConstraint!
+  
+  @IBOutlet internal weak var constrintFirstHalfProgressWidth: NSLayoutConstraint!
+  @IBOutlet internal weak var constrintSecondHalfProgressWidth: NSLayoutConstraint!
+  
+  //HSCenterSlidableValue: protocol properties
+  var maxDimentionValue: Double {
+    assertionFailure("This must be overrided in the subclass of HSCenterSlider")
+    return 0
+  }
+  
     //MARK:- iVars
     internal var isMovingThumb = false;
-    internal let thumbHalfWidth: Double = 15
+    internal let thumbHalfDementionValue: Double = 15
     
     override public var tintColor: UIColor! {
         didSet{
             super.tintColor = tintColor;
-            self.leftProgressView.backgroundColor = tintColor
-            self.rightProgressView.backgroundColor = tintColor
+            self.firstHalfProgressView.backgroundColor = tintColor
+            self.secondHalfProgressView.backgroundColor = tintColor
         }
     }
     
     public var rangeValue: HSRange?
     public var value: Double = 0.0 {
         didSet{
-            
             self.lblProgressValue.text = String.init(format: "%.0f", arguments: [self.value])
-            if self.value < self.internalRightHalfRangeConverter!.range1.low {
-                self.setProgressOnUI(progressType: HSProgressType.left(progress: (value)))
+            if self.value < self.internalSecondHalfRangeConverter!.range1.low {
+                self.setProgressOnUI(progressType: HSProgressType.first(progress: (value)))
             }else{
-                self.setProgressOnUI(progressType: HSProgressType.right(progress: (value)))
+                self.setProgressOnUI(progressType: HSProgressType.second(progress: (value)))
             }
         }
     }
@@ -76,9 +98,10 @@ public class HSCenterSlider: UIControl {
     func commonInit() {
         
         let selfBundle = Bundle(for: HSCenterSlider.self)
+      
         let resourceBundlePath = selfBundle.path(forResource: HSCenterSlider.className, ofType: "bundle")
         
-        let nib : UINib = UINib(nibName: HSCenterSlider.className, bundle: Bundle(path: resourceBundlePath!) )
+        let nib : UINib = UINib(nibName: self.className, bundle: Bundle(path: resourceBundlePath!) )
         nib.instantiate(withOwner: self, options: nil)
         self.contentView.frame=self.bounds
         self.addSubview(self.contentView)
@@ -92,8 +115,8 @@ public class HSCenterSlider: UIControl {
         self.thumb.elevate(elevation: 2.0)
         
         self.lblProgressValue.alpha = 0.0;
-        self.leftProgressView.backgroundColor = tintColor
-        self.rightProgressView.backgroundColor = tintColor
+        self.firstHalfProgressView.backgroundColor = tintColor
+        self.secondHalfProgressView.backgroundColor = tintColor
         
         self.rangeValue = HSRange(low: -100, high: 100) //default Range for the slider
         self.value = 0; //default progress value
@@ -111,23 +134,23 @@ extension HSCenterSlider{
     
     internal func setProgressOnUI(progressType: HSProgressType){
         switch progressType {
-        case .left(let progress):
+        case .first(let progress):
             let constantValue = min(
-                (self.internalLeftHalfRangeConverter!.range2.high.cgfloat - self.internalLeftHalfRangeConverter!.toRange2(of: progress).cgfloat),
-                (self.centerX - self.thumbHalfWidth).cgfloat
+                (self.internalFirstHalfRangeConverter!.range2.high.cgfloat - self.internalFirstHalfRangeConverter!.toRange2(of: progress).cgfloat),
+                (self.centerX - self.thumbHalfDementionValue).cgfloat
             )
-            self.constrintRightProgressWidth.constant = 0.0;
-            self.constrintLeftProgressWidth.constant = constantValue
-            self.constaintThumbCenterX.constant = -1 * constantValue
+            self.constrintSecondHalfProgressWidth.constant = 0.0;
+            self.constrintFirstHalfProgressWidth.constant = constantValue
+            self.constaintThumbCenterValue.constant = -1 * constantValue
             
-        case .right(let progress):
+        case .second(let progress):
             let constantValue = min(
-                self.internalRightHalfRangeConverter!.toRange2(of: progress).cgfloat - self.internalRightHalfRangeConverter!.range2.low.cgfloat,
-                (self.centerX - self.thumbHalfWidth).cgfloat
+                self.internalSecondHalfRangeConverter!.toRange2(of: progress).cgfloat - self.internalSecondHalfRangeConverter!.range2.low.cgfloat,
+                (self.centerX - self.thumbHalfDementionValue).cgfloat
             )
-            self.constrintLeftProgressWidth.constant = 0.0;
-            self.constrintRightProgressWidth.constant = constantValue
-            self.constaintThumbCenterX.constant = constantValue
+            self.constrintFirstHalfProgressWidth.constant = 0.0;
+            self.constrintSecondHalfProgressWidth.constant = constantValue
+            self.constaintThumbCenterValue.constant = constantValue
         }
     }
 }
@@ -135,7 +158,9 @@ extension HSCenterSlider{
 
 
 //MARK:- Internal Converters
-extension HSCenterSlider {
+// This is used to devide full range into two ranges [FirstHalf Range and SecondHalf Range]
+extension HSCenterSlider: HSCenterSlidableValue {
+  
     internal var internalRangeConverter: HSRangeConverter? {
         guard let rangeValue = rangeValue else {
             return nil;
@@ -143,10 +168,10 @@ extension HSCenterSlider {
         
         return
             HSRangeConverter(range1: HSRange(low: rangeValue.low, high: rangeValue.high),
-                             range2: HSRange(low: 0, high: self.bounds.size.width.double))
+                             range2: HSRange(low: 0, high: maxDimentionValue))
     }
     
-    internal var internalLeftHalfRangeConverter: HSRangeConverter? {
+    internal var internalFirstHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }
@@ -156,7 +181,7 @@ extension HSCenterSlider {
                              range2: HSRange(low: internalConverter.toRange2(of: internalConverter.range1.low), high: internalConverter.toRange2(of: internalConverter.range1.mid))
                             )
     }
-    internal var internalRightHalfRangeConverter: HSRangeConverter? {
+    internal var internalSecondHalfRangeConverter: HSRangeConverter? {
         guard let internalConverter = self.internalRangeConverter else {
             return nil;
         }

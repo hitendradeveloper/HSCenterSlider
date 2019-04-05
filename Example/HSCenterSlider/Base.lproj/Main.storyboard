@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-mj-kd1" customClass="HSCenterSlider" customModule="HSCenterSlider">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-mj-kd1" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider">
                                 <rect key="frame" x="20" y="318.5" width="335" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -66,17 +66,28 @@
                                     <action selector="btn_80AnimatedDidtap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlt-yy-SxA"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5r9-G2-YYb" customClass="HSVerticleCenterSlider" customModule="HSCenterSlider">
+                                <rect key="frame" x="162.5" y="388.5" width="50" height="258.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="acv-CL-ZWt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5r9-G2-YYb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qr0-ga-I40"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5r9-G2-YYb" secondAttribute="bottom" constant="20" id="XLd-0X-p6E"/>
                             <constraint firstItem="ztR-mj-kd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kry-LN-YcF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ztR-mj-kd1" secondAttribute="trailing" constant="20" id="xLs-qd-Q6c"/>
+                            <constraint firstItem="5r9-G2-YYb" firstAttribute="top" secondItem="ztR-mj-kd1" secondAttribute="bottom" constant="20" id="yV9-Tg-A4I"/>
                             <constraint firstItem="ztR-mj-kd1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="z6m-F6-3dr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="hsDoubleSlider" destination="ztR-mj-kd1" id="xwP-HD-Xea"/>
+                        <outlet property="hsVertileCenterSlider" destination="5r9-G2-YYb" id="76q-r7-TNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
