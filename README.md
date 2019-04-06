@@ -22,7 +22,7 @@ it, simply add the following line to your Podfile:
 pod 'HSCenterSlider'
 ```
 ##### Possible Error:
-`[!] Unable to find a specification for 'HSRange'` 
+`[!] Unable to find a specification for 'HSCenterSlider'` 
 ##### Solution:
 
 ```ruby
