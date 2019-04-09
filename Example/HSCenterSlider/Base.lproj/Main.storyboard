@@ -14,17 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HSCenterSlider_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="HSCenterSlider">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztR-mj-kd1" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider">
-                                <rect key="frame" x="20" y="318.5" width="335" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Yab-zp-5zx"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scf-sj-UNQ">
                                 <rect key="frame" x="61" y="211" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -67,26 +60,34 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5r9-G2-YYb" customClass="HSVerticleCenterSlider" customModule="HSCenterSlider">
-                                <rect key="frame" x="162.5" y="388.5" width="50" height="258.5"/>
+                                <rect key="frame" x="162.5" y="338.5" width="50" height="308.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="acv-CL-ZWt"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-eS-0Vk" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider">
+                                <rect key="frame" x="20" y="268.5" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CUz-eS-cKn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PXb-eS-0Vk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="Pag-wY-NHG"/>
                             <constraint firstItem="5r9-G2-YYb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qr0-ga-I40"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5r9-G2-YYb" secondAttribute="bottom" constant="20" id="XLd-0X-p6E"/>
-                            <constraint firstItem="ztR-mj-kd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kry-LN-YcF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ztR-mj-kd1" secondAttribute="trailing" constant="20" id="xLs-qd-Q6c"/>
-                            <constraint firstItem="5r9-G2-YYb" firstAttribute="top" secondItem="ztR-mj-kd1" secondAttribute="bottom" constant="20" id="yV9-Tg-A4I"/>
-                            <constraint firstItem="ztR-mj-kd1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="z6m-F6-3dr"/>
+                            <constraint firstItem="PXb-eS-0Vk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XMP-rq-dyB"/>
+                            <constraint firstItem="5r9-G2-YYb" firstAttribute="top" secondItem="PXb-eS-0Vk" secondAttribute="bottom" constant="20" id="ZeU-6I-IEe"/>
+                            <constraint firstItem="PXb-eS-0Vk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s8o-K6-W1N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="hsVertileCenterSlider" destination="5r9-G2-YYb" id="76q-r7-TNC"/>
+                        <outlet property="hsDoubleSlider" destination="PXb-eS-0Vk" id="bL7-9g-tNK"/>
+                        <outlet property="hsVertileCenterSlider" destination="5r9-G2-YYb" id="SY6-5I-Fn1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

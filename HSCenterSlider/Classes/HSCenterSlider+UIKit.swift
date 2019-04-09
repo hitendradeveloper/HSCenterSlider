@@ -13,6 +13,7 @@ import Foundation
 internal protocol MaterialView {
   func elevate(elevation: Double)
 }
+
 extension UIView: MaterialView {
   internal func elevate(elevation: Double){
     self.layer.masksToBounds = false
@@ -26,7 +27,11 @@ extension UIView: MaterialView {
 //MARK:- Touches Event + Geometry
 extension HSCenterSlider {
   internal var centerX: Double {
-    return self.maxDimentionValue / 2.0
+    guard let slidableValueDatasource = self.slidableValueDatasource else {
+      assertionFailure("Hitendra Solanki: slidableValueDatasource must be set in subclass of HSCenterSlider, it must not be nil")
+      return 0.0
+    }
+    return slidableValueDatasource.maxDimentionValue / 2.0
   }
   
   public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -44,7 +49,13 @@ extension HSCenterSlider {
     }
     
     if isMovingThumb {
-      let calculationValue = self.sliderType == HSCenterSliderType.horizontal ? movingPoint.x : movingPoint.y
+      
+      guard let slidableValueDatasource = self.slidableValueDatasource else {
+        assertionFailure("Hitendra Solanki: slidableValueDatasource must be set in subclass of HSCenterSlider, it must not be nil")
+        return
+      }
+      
+      let calculationValue = slidableValueDatasource.sliderType == HSCenterSlider.SliderType.horizontal ? movingPoint.x : movingPoint.y
       let value = self.internalRangeConverter!.convertToRange1(valueFromRange2: calculationValue.double)
       self.value = self.rangeValue!.innerValue(value: value)
       self.delegate?.centerSlider(slider: self, didChange: self.value)

@@ -16,11 +16,13 @@ extension Double {
     return CGFloat(self)
   }
 }
+
 extension CGFloat {
   var double: Double {
     return Double(self)
   }
 }
+
 
 public extension NSObject{
   class var className: String {

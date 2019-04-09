@@ -9,60 +9,45 @@
 import UIKit
 import HSRange
 
-private protocol HSCenterSlidableUI {
-  var firstHalfProgressView: UIView!  {get set}
-  var secondHalfProgressView: UIView! {get set}
-  
-  var constaintThumbCenterDimentionValue: NSLayoutConstraint!  {get set}
-  
-  var constrintFirstHalfProgressDimentionValue: NSLayoutConstraint!   {get set}
-  var constrintSecondHalfProgressDimentionValue: NSLayoutConstraint!  {get set}
-}
-
-private protocol HSCenterSlidableValue {
-  var maxDimentionValue: Double { get }
-  var sliderType: HSCenterSlider.HSCenterSliderType { get }
-}
-
 public class HSCenterSlider: UIControl, HSCenterSlidableUI {
   
+  //MARK:- Custom Hierarchical types
+  
+  //MARK:- Enum HSProgressType
   enum HSProgressType {
     case first(progress: Double)
     case second(progress: Double)
   }
   
-  enum HSCenterSliderType {
+  //MARK:- Enum SliderType
+  public enum SliderType {
     case horizontal
     case verticle
   }
   
-  //MARK:- Delegate
-  public weak var delegate: HSCenterSliderDelegate?
   
   //MARK:- IBOutlets
-  @IBOutlet private var contentView: UIView!
+  @IBOutlet internal var contentView: UIView!
   
   @IBOutlet internal weak var thumb: UIView!
   @IBOutlet internal weak var lblProgressValue: UILabel!
   
   //HSCenterSlidable: protocol properties
-  @IBOutlet fileprivate weak var firstHalfProgressView: UIView!
-  @IBOutlet fileprivate weak var secondHalfProgressView: UIView!
+  @IBOutlet internal weak var firstHalfProgressView: UIView!
+  @IBOutlet internal weak var secondHalfProgressView: UIView!
   
   @IBOutlet internal weak var constaintThumbCenterDimentionValue: NSLayoutConstraint!
   
   @IBOutlet internal weak var constrintFirstHalfProgressDimentionValue: NSLayoutConstraint!
   @IBOutlet internal weak var constrintSecondHalfProgressDimentionValue: NSLayoutConstraint!
   
-  //HSCenterSlidableValue: protocol properties
-  var maxDimentionValue: Double {
-    assertionFailure("This must be overrided in the subclass of HSCenterSlider")
-    return 0
-  }
-  var sliderType: HSCenterSliderType {
-    assertionFailure("This must be overrided in the subclass of HSCenterSlider")
-    return HSCenterSliderType.horizontal
-  }
+  //MARK:- Delegate & DataSource
+  
+  //datasource used to fetch vales for calculations
+  public weak var slidableValueDatasource: HSCenterSlidableValue?
+  
+  //delegate used to update outer world, after calculations
+  public weak var delegate: HSCenterSliderDelegate?
   
   //MARK:- iVars
   internal var isMovingThumb = false;
@@ -92,26 +77,27 @@ public class HSCenterSlider: UIControl, HSCenterSlidableUI {
   //MARK:- Constructors
   public init() {
     super.init(frame: .zero)
-    self.commonInit()
+    self.baseInit()
   }
   
   public override init(frame: CGRect) {
     super.init(frame: frame)
-    self.commonInit()
+    self.baseInit()
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.commonInit()
+    self.baseInit()
   }
   
-  func commonInit() { 
-    
+  func loadNib(){
     let selfBundle = Bundle(for: HSCenterSlider.self)
     let resourceBundlePath = selfBundle.path(forResource: HSCenterSlider.className, ofType: "bundle")
     let bundle = Bundle(path: resourceBundlePath!)
     
-    let nib : UINib = UINib(nibName: self.className, bundle: bundle)
+    let className = self.slidableValueDatasource?.sliderType == SliderType.horizontal ? HSHorizontalCenterSlider.className : HSVerticleCenterSlider.className
+    
+    let nib : UINib = UINib(nibName: className, bundle: bundle)
     nib.instantiate(withOwner: self, options: nil)
     self.contentView.frame = self.bounds
     self.addSubview(self.contentView)
@@ -128,13 +114,18 @@ public class HSCenterSlider: UIControl, HSCenterSlidableUI {
     self.firstHalfProgressView.backgroundColor = tintColor
     self.secondHalfProgressView.backgroundColor = tintColor
     
+    print("\(#function) \(#line)")
     self.rangeValue = HSRange(low: -100, high: 100) //default Range for the slider
     self.value = 0; //default progress value
+  }
+  
+  func baseInit() {
+    
   }
 }
 
 //MARK:- Update Progress Value
-extension HSCenterSlider{
+extension HSCenterSlider {
   public func set(value: Double, animated: Bool) {
     self.value = self.rangeValue!.innerValue(value: value);
     UIView.animate(withDuration: animated ? 0.25 : 0.0) {
@@ -169,16 +160,21 @@ extension HSCenterSlider{
 
 //MARK:- Internal Converters
 // This is used to devide full range into two ranges [FirstHalf Range and SecondHalf Range]
-extension HSCenterSlider: HSCenterSlidableValue {
+public extension HSCenterSlider {
   
   internal var internalRangeConverter: HSRangeConverter? {
     guard let rangeValue = rangeValue else {
       return nil;
     }
     
+    guard let slidableValueDatasource = self.slidableValueDatasource else {
+      assertionFailure("Hitendra Solanki: slidableValueDatasource must be set in subclass of HSCenterSlider, it must not be nil")
+      return nil
+    }
+    
     return
       HSRangeConverter(range1: HSRange(low: rangeValue.low, high: rangeValue.high),
-                       range2: HSRange(low: 0, high: maxDimentionValue))
+                       range2: HSRange(low: 0, high: slidableValueDatasource.maxDimentionValue))
   }
   
   internal var internalFirstHalfRangeConverter: HSRangeConverter? {

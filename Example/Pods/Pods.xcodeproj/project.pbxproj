@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */; };
+		0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSlider+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSlider+Protocols.swift */; };
 		1DCDA930009D1CE351234EBAFC9384CE /* HSRange-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E05550C2D79529458B09CD1CC15AFFA3 /* HSRange-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E89A71127758155D88A599F1F60D627 /* HSRangeConverter+Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9D38D479293D9BC8A641FF3DF5545 /* HSRangeConverter+Deprecations.swift */; };
 		21F9DE805262B603DA37978250B971C1 /* Pods-HSCenterSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD2FA791AAB29E7645A50A093BC4F17 /* Pods-HSCenterSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -120,7 +120,7 @@
 		E0484BEC6F78F6918AFDF215C0B8C091 /* Pods_HSCenterSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSCenterSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05550C2D79529458B09CD1CC15AFFA3 /* HSRange-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSRange-umbrella.h"; sourceTree = "<group>"; };
 		E10E66FD768C2D1BC47BB16FFD9600C0 /* HSCenterSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HSCenterSlider.modulemap; sourceTree = "<group>"; };
-		E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSCenterSliderDelegate.swift; path = HSCenterSlider/Classes/HSCenterSliderDelegate.swift; sourceTree = "<group>"; };
+		E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSlider+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSCenterSlider+Protocols.swift"; path = "HSCenterSlider/Classes/HSCenterSlider+Protocols.swift"; sourceTree = "<group>"; };
 		E95738A204DB00FA07087226E9CFB23C /* Pods-HSCenterSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HSCenterSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EC15F8C1496A4D9B6469906900A660F4 /* HSCenterSlider+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HSCenterSlider+UIKit.swift"; path = "HSCenterSlider/Classes/HSCenterSlider+UIKit.swift"; sourceTree = "<group>"; };
 		ECB0010AA18C23121026CA25B8479799 /* HSRangeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSRangeConverter.swift; path = HSRange/Classes/HSRangeConverter.swift; sourceTree = "<group>"; };
@@ -295,10 +295,10 @@
 		93C156DCB94141CCC4AE8B8ADD6B4E33 /* HSCenterSlider */ = {
 			isa = PBXGroup;
 			children = (
-				08C75CEF840288201BD430DD0B335C58 /* HSCenterSlider.swift */,
 				BC8C27B90A53485E71D9BA63DCC0336A /* HSCenterSlider+Foundation.swift */,
 				EC15F8C1496A4D9B6469906900A660F4 /* HSCenterSlider+UIKit.swift */,
-				E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSliderDelegate.swift */,
+				E531E9264D83F4ED5659807EF4BDCFDE /* HSCenterSlider+Protocols.swift */,
+				08C75CEF840288201BD430DD0B335C58 /* HSCenterSlider.swift */,
 				F72F52802257729500ED9A1A /* HSHorizontalCenterSlider.swift */,
 				F72F527F2257729500ED9A1A /* HSVerticleCenterSlider.swift */,
 				3453465977DA7751BAE6BFFEACA9B614 /* Pod */,
@@ -576,7 +576,7 @@
 				467F21A1DDA4234AFC86E25AA1431178 /* HSCenterSlider+UIKit.swift in Sources */,
 				32DBF089A18E79DA22530B2BF60258EA /* HSCenterSlider-dummy.m in Sources */,
 				F2C2072C692FA1E7510D4AAB8CFF8A0D /* HSCenterSlider.swift in Sources */,
-				0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSliderDelegate.swift in Sources */,
+				0CA364D0F4366EF7F69EE6F96CF1C356 /* HSCenterSlider+Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

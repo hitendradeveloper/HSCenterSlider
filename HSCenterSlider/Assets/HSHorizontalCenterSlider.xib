@@ -15,9 +15,9 @@
                 <outlet property="constrintFirstHalfProgressDimentionValue" destination="pTx-og-79R" id="buG-8o-oJ4"/>
                 <outlet property="constrintSecondHalfProgressDimentionValue" destination="ezs-J1-msH" id="ifD-Lm-XSD"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="oly-1c-epr"/>
-                <outlet property="firstHalfProgressView" destination="Tdq-O5-LpE" id="lwA-KP-ooE"/>
+                <outlet property="firstHalfProgressView" destination="Tdq-O5-LpE" id="7Xm-SJ-wI4"/>
                 <outlet property="lblProgressValue" destination="ClY-g6-4V9" id="ZEm-0b-6eo"/>
-                <outlet property="secondHalfProgressView" destination="jsp-ZF-ToP" id="uqR-QU-h2w"/>
+                <outlet property="secondHalfProgressView" destination="jsp-ZF-ToP" id="pwh-yc-CAr"/>
                 <outlet property="thumb" destination="E0x-EJ-8Wi" id="NJh-jK-hJN"/>
             </connections>
         </placeholder>
@@ -95,7 +95,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-578" y="-196"/>
+            <point key="canvasLocation" x="-1039" y="-686"/>
         </view>
     </objects>
 </document>

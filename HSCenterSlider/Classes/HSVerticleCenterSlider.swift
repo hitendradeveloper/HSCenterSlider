@@ -6,12 +6,41 @@
 //
 
 import Foundation
+import HSRange
 
 public class HSVerticleCenterSlider: HSCenterSlider {
-  override var maxDimentionValue: Double {
+  
+  //MARK:- Constructors
+  override init() {
+    super.init(frame: .zero)
+    self.commonInit()
+  }
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    self.commonInit()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    self.commonInit()
+  }
+  
+  internal func commonInit() {
+    self.slidableValueDatasource = self
+    super.loadNib()
+    super.baseInit()
+  }
+}
+
+//MARK:- Extension HSCenterSlidableValue
+extension HSVerticleCenterSlider: HSCenterSlidableValue {
+ 
+  public var maxDimentionValue: Double {
     return self.bounds.size.height.double
   }
-  override var sliderType: HSCenterSlider.HSCenterSliderType {
-    return HSCenterSliderType.verticle
+  
+  public var sliderType: HSCenterSlider.SliderType {
+    return HSCenterSlider.SliderType.verticle
   }
 }
