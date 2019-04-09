@@ -62,18 +62,24 @@ pod setup
 
 <br /><br /><br />
 # Where to go from here?
+
 <br />
+
 ## Read series ‘Design patterns by Tutorials — The power of OOP’
 ### Part-1: [Faceted and Fluent Builder pattern in Swift](https://medium.com/p/2e871b551cbe)
 ### Part-2: [Singleton Design Pattern in Swift](https://medium.com/p/431314237b10)
+
 <br />
+
 ## Read my latest series ‘Protocol — The power of Swift’
 ### Part-1: [What are type-casting and class-types?](https://medium.com/p/5dfe9bc41a99)
 ### Part-2: [Conforming a protocol](https://medium.com/p/950c85bb69b1)
 ### Part-3: [Protocol composition](https://medium.com/p/45e97f6531f9)
 ### Part-4: [My rule of thumb for possible data types](https://medium.com/p/6906cdedd867)
 ### Part-5: [Protocol as a super-type](https://medium.com/p/1e5b86bfd1dc)
+
 <br /><br />
+
 ## Author
 Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gmail.com)
 
@@ -83,6 +89,7 @@ Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gma
 ### Follow me on [Twitter](https://twitter.com/hitendrahckr)
 
 <br /><br /><br />
+
 ## License
 
 HSCenterSlider is available under the MIT license. See the LICENSE file for more info.
