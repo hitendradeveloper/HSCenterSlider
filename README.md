@@ -81,7 +81,7 @@ pod setup
 <br /><br />
 
 ## Author
-Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gmail.com)
+#### Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gmail.com)
 
 #### Find my repositories on [Github](https://github.com/hitendradeveloper)
 #### Read my blogs on [Medium](https://medium.com/@hitendrahckr)
