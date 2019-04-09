@@ -83,10 +83,10 @@ pod setup
 ## Author
 Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gmail.com)
 
-### Find my repositories on [Github](https://github.com/hitendradeveloper)
-### Read my blogs on [Medium](https://medium.com/@hitendrahckr)
-### Connect me via [LinkedIn](http://in.linkedin.com/in/hitendradeveloper)
-### Follow me on [Twitter](https://twitter.com/hitendrahckr)
+#### Find my repositories on [Github](https://github.com/hitendradeveloper)
+#### Read my blogs on [Medium](https://medium.com/@hitendrahckr)
+#### Connect me via [LinkedIn](http://in.linkedin.com/in/hitendradeveloper)
+#### Follow me on [Twitter](https://twitter.com/hitendrahckr)
 
 <br /><br /><br />
 
