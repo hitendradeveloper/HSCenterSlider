@@ -1,7 +1,7 @@
 PODS:
-  - HSCenterSlider (0.1.5):
-    - HSRange (= 5.0)
-  - HSRange (5.0)
+  - HSCenterSlider (2.0):
+    - HSRange (= 5.0.11)
+  - HSRange (5.0.11)
 
 DEPENDENCIES:
   - HSCenterSlider (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HSCenterSlider: cfa443da932ba52ef6327be21be62719f186aa5b
-  HSRange: 0a0482cc6ccee78480850c972646510bd60edcd0
+  HSCenterSlider: fc5a1edef54ebbc37f0d23e815d67e9f5ff088a4
+  HSRange: ad80490dcaace7b4e4475313e384e3137aca6f48
 
 PODFILE CHECKSUM: e5dc53aea36e26458a896016cee32555efa5f53b
 

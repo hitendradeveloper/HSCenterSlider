@@ -16,13 +16,14 @@ public struct HSRangeConverter {
 
 //MARK:- HSRangeConverter - Initializers
 public extension HSRangeConverter {
-  init(range1: HSRange, range2: HSRange) {
+  init(range1: HSRange,
+       range2: HSRange) {
     self.range1 = range1
     self.range2 = range2
   }
   
-  init(range1low: Double, range1high: Double,
-              range2low: Double, range2high: Double) {
+  init( range1low: Double, range1high: Double,
+        range2low: Double, range2high: Double) {
     self.range1 = HSRange(low: range1low, high: range1high)
     self.range2 = HSRange(low: range2low, high: range2high)
   }

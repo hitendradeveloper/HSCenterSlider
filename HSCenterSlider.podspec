@@ -11,15 +11,11 @@ Pod::Spec.new do |s|
   s.version          = '2.0'
   s.summary          = 'Easy to use double side center slider, that can show value in (A,B) Range.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
   Easy to use double side center slider, that can show value in (A,B) Range.
   Where center of the slider is (A+B)/2.
+  Supports both Horizonal and Verticle UI for the slider.
   E.g.
   1. If your range if (-100,100) then center point of slider will be 0.
   1. If your range if (-80,100) then center point of slider will be 10.
@@ -33,6 +29,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/hitendrahckr'
 
   s.ios.deployment_target = '9.0'
+  s.swift_versions = ['4.0','4.1','4.2','4.3','5.0']
 
   s.source_files = 'HSCenterSlider/Classes/**/*'
   
@@ -42,5 +39,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'HSRange', '5.0'
+  s.dependency 'HSRange', '5.0.11'
 end
