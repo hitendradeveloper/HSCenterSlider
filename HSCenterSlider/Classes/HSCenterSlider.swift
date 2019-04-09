@@ -106,7 +106,7 @@ public class HSCenterSlider: UIControl, HSCenterSlidableUI {
     self.contentView.backgroundColor = UIColor.clear
     
     self.thumb.backgroundColor = UIColor.white
-    self.thumb.layer.cornerRadius = thumbHalfDementionValue.cgfloat/2.0
+    self.thumb.layer.cornerRadius = thumbHalfDementionValue.cgfloat
     self.thumb.layer.masksToBounds = true
     self.thumb.elevate(elevation: 2.0)
     
