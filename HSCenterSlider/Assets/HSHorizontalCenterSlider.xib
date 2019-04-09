@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSCenterSlider" customModule="HSCenterSlider" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HSHorizontalCenterSlider" customModule="HSCenterSlider" customModuleProvider="target">
             <connections>
-                <outlet property="constaintThumbCenterX" destination="Ht8-sB-w60" id="1db-6I-k3D"/>
-                <outlet property="constrintLeftProgressWidth" destination="pTx-og-79R" id="0i9-lM-X1q"/>
-                <outlet property="constrintRightProgressWidth" destination="ezs-J1-msH" id="n2h-Cj-kpp"/>
+                <outlet property="constaintThumbCenterDimentionValue" destination="Ht8-sB-w60" id="epX-wa-wyg"/>
+                <outlet property="constrintFirstHalfProgressDimentionValue" destination="pTx-og-79R" id="buG-8o-oJ4"/>
+                <outlet property="constrintSecondHalfProgressDimentionValue" destination="ezs-J1-msH" id="ifD-Lm-XSD"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="oly-1c-epr"/>
+                <outlet property="firstHalfProgressView" destination="Tdq-O5-LpE" id="7Xm-SJ-wI4"/>
                 <outlet property="lblProgressValue" destination="ClY-g6-4V9" id="ZEm-0b-6eo"/>
-                <outlet property="leftProgressView" destination="Tdq-O5-LpE" id="gpp-ao-2lu"/>
-                <outlet property="rightProgressView" destination="jsp-ZF-ToP" id="TEn-c3-wau"/>
+                <outlet property="secondHalfProgressView" destination="jsp-ZF-ToP" id="pwh-yc-CAr"/>
                 <outlet property="thumb" destination="E0x-EJ-8Wi" id="NJh-jK-hJN"/>
             </connections>
         </placeholder>
@@ -28,7 +27,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsY-kY-1i4">
-                    <rect key="frame" x="187" y="42.5" width="2" height="8"/>
+                    <rect key="frame" x="186.5" y="41.5" width="2" height="8"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="8" id="A3U-AN-fWZ"/>
@@ -38,7 +37,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-4H-i3t" userLabel="progress container">
                     <rect key="frame" x="0.0" y="55.5" width="375" height="2"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdq-O5-LpE" userLabel="left progress">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdq-O5-LpE" userLabel="first progress">
                             <rect key="frame" x="37.5" y="0.0" width="150" height="2"/>
                             <color key="backgroundColor" red="0.99215686274509807" green="0.12549019607843137" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -46,7 +45,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsp-ZF-ToP" userLabel="right progress">
-                            <rect key="frame" x="187.5" y="-0.5" width="150" height="2"/>
+                            <rect key="frame" x="187.5" y="0.0" width="150" height="2"/>
                             <color key="backgroundColor" red="0.99215686270000003" green="0.12549019610000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="ezs-J1-msH"/>
@@ -74,7 +73,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-g6-4V9">
-                    <rect key="frame" x="180.5" y="18.5" width="15.5" height="17"/>
+                    <rect key="frame" x="180" y="18.5" width="15.5" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -84,11 +83,11 @@
             <constraints>
                 <constraint firstItem="Adz-4H-i3t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3G5-Wk-VYf"/>
                 <constraint firstAttribute="trailing" secondItem="Adz-4H-i3t" secondAttribute="trailing" id="BsN-MU-JCB"/>
-                <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerX" secondItem="Adz-4H-i3t" secondAttribute="centerX" id="Ht8-sB-w60"/>
+                <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ht8-sB-w60"/>
                 <constraint firstItem="BsY-kY-1i4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IJK-uD-9aw"/>
                 <constraint firstItem="E0x-EJ-8Wi" firstAttribute="top" secondItem="ClY-g6-4V9" secondAttribute="bottom" constant="6" id="KqA-WS-rO4"/>
                 <constraint firstItem="E0x-EJ-8Wi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LSZ-ta-ZzE"/>
-                <constraint firstItem="BsY-kY-1i4" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-6" id="h7U-Fa-YyG"/>
+                <constraint firstItem="BsY-kY-1i4" firstAttribute="bottom" secondItem="Adz-4H-i3t" secondAttribute="top" constant="-6" id="h7U-Fa-YyG"/>
                 <constraint firstItem="Adz-4H-i3t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jyE-5Z-ZEl"/>
                 <constraint firstItem="ClY-g6-4V9" firstAttribute="centerX" secondItem="E0x-EJ-8Wi" secondAttribute="centerX" id="mFx-jF-jgF"/>
                 <constraint firstItem="Adz-4H-i3t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sWm-ki-pGN"/>
@@ -96,7 +95,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-37.5" y="-156.5"/>
+            <point key="canvasLocation" x="-1039" y="-686"/>
         </view>
     </objects>
 </document>

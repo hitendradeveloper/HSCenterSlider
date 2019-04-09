@@ -1,13 +1,13 @@
 PODS:
-  - HSCenterSlider (0.1.0):
-    - HSRange (= 1.1)
-  - HSRange (1.1)
+  - HSCenterSlider (0.1.5):
+    - HSRange (= 5.0)
+  - HSRange (5.0)
 
 DEPENDENCIES:
   - HSCenterSlider (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - HSRange
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HSCenterSlider: 7a7a58710bba4c1c3c59b28d70316e26c96c2be2
-  HSRange: 7b458bb386db68d1d9484254b009fa7e7fe63f35
+  HSCenterSlider: cfa443da932ba52ef6327be21be62719f186aa5b
+  HSRange: 0a0482cc6ccee78480850c972646510bd60edcd0
 
 PODFILE CHECKSUM: e5dc53aea36e26458a896016cee32555efa5f53b
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.0.beta.2

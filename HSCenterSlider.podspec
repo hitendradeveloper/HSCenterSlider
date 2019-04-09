@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSCenterSlider'
-  s.version          = '0.1.5'
+  s.version          = '2.0'
   s.summary          = 'Easy to use double side center slider, that can show value in (A,B) Range.'
 
 # This description is used to generate tags and improve search results.
@@ -42,5 +42,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'HSRange', '1.1'
+  s.dependency 'HSRange', '5.0'
 end

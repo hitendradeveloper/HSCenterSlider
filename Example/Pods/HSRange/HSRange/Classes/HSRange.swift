@@ -8,7 +8,7 @@
 
 import Foundation
 
-//MARK:- Backbone structure behind the scene
+//MARK:- Backbone structure behind the scene which acts as Closed range
 public struct HSRange {
     public var low: Double!
     public var high: Double!
@@ -19,17 +19,17 @@ public struct HSRange {
     }
 }
 
-//MARK:- Helpers
+//MARK:- HSRange Helpers
 public extension HSRange {
     //middle value of the range
     //e.g. Range(-100,100), this will return 0
-    public var mid: Double {
+    var mid: Double {
         return (self.low + self.high)/2.0
     }
     
     //this returns the value inside of range
     //e.g. Range(-100,100), if you pass -200, this will return -100
-    public func innerValue(value: Double) -> Double {
+    func innerValue(value: Double) -> Double {
         return min(max(value,self.low),self.high)
     }
 }
