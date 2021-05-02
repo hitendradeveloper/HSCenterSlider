@@ -59,7 +59,6 @@ pod 'HSCenterSlider'
 pod setup
 ```
 
-<br /><br />
 
 ## Author
 #### Hitendra Solanki, [hitendra.developer@gmail.com](mailto://hitendra.developer@gmail.com)
@@ -69,7 +68,7 @@ pod setup
 #### Connect me via [LinkedIn](http://in.linkedin.com/in/hitendradeveloper)
 #### Follow me on [Twitter](https://twitter.com/hitendrahckr)
 
-<br /><br /><br />
+
 
 ## License
 
