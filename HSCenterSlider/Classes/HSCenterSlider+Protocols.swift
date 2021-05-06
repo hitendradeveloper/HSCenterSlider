@@ -10,7 +10,7 @@ import Foundation
 
 //MARK: HSCenterSliderDelegate Protocol
 // This protocol used to provide update progress value changes to outside world
-public protocol HSCenterSliderDelegate: class {
+public protocol HSCenterSliderDelegate: AnyObject {
   func centerSlider(slider: HSCenterSlider, didChange value: Double)
 }
 

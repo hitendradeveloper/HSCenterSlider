@@ -114,7 +114,6 @@ public class HSCenterSlider: UIControl, HSCenterSlidableUI {
     self.firstHalfProgressView.backgroundColor = tintColor
     self.secondHalfProgressView.backgroundColor = tintColor
     
-    print("\(#function) \(#line)")
     self.rangeValue = HSRange(low: -100, high: 100) //default Range for the slider
     self.value = 0; //default progress value
   }
