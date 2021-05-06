@@ -1,6 +1,0 @@
-framework module HSRange {
-  umbrella header "HSRange-umbrella.h"
-
-  export *
-  module * { export * }
-}

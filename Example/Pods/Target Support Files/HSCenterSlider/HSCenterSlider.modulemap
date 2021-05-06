@@ -1,6 +1,0 @@
-framework module HSCenterSlider {
-  umbrella header "HSCenterSlider-umbrella.h"
-
-  export *
-  module * { export * }
-}
