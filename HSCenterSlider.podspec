@@ -25,19 +25,18 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hitendradeveloper' => 'hitendra.developer@gmail.com' }
-  s.source           = { :git => 'https://github.com/hitendradeveloper/HSCenterSlider.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hitendradeveloper/HSCenterSlider.git', :tag => s.version }
   s.social_media_url = 'https://twitter.com/hitendrahckr'
 
   s.ios.deployment_target = '9.0'
-  s.swift_versions = ['4.0','4.1','4.2','4.3','5.0']
+  s.swift_versions = ['4.0','4.1','4.2','4.3','5.0', '5.1', '5.2', '5.3', '5.4']
 
   s.source_files = 'HSCenterSlider/Classes/**/*'
-  
   s.resource_bundles = {
     'HSCenterSlider' => ['HSCenterSlider/Assets/**/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'HSRange', '5.2.0'
+  s.dependency 'HSRange', '5.4.0'
 end

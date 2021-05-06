@@ -14,9 +14,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 | Swift  | XCode | Tag/Pod version |
 | --- | ------------- | ------ |
-| 3.x  | >= 8.x  | 2.0.1 |
+| 5.x  | >= 10.x | 2.1.1 |
 | 4.x  | >= 9.x  | 2.0.1 |
-| 5.x  | >= 10.x | 2.0.1 |
+| 3.x  | >= 8.x  | 2.0.1 |
 
 ## Installation
 
@@ -30,7 +30,7 @@ pod 'HSCenterSlider'
 ## How to use?
 1. Drag the UIView and drop in to the storybaord or XIB
 2. Give class HSHorizontalCenterSlider or HSVerticleCenterSlider to the view. That's it.
-3. You center slider is ready to use in just two steps
+3. Your center slider is ready to use in just two steps
    
 ## More Usage
 - Change slider range between any two values, Default range is (-100,100)
